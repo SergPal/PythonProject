@@ -1,0 +1,13 @@
+tickets = int(input('Введите кол-во билетов:'))
+price = 0
+for i in range(tickets,):
+    age = int(input('Введите возраст:'))
+    if age < 18:
+        price += 0
+    elif 18 <= age < 25:
+        price += 990
+    elif 25 <= age < 101:
+        price += 1390
+if tickets > 3:
+    price = price - (price * 0.1)
+print('Стоимость билетов с учетом скидки', price)
